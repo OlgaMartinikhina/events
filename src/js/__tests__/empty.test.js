@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/extensions
-import empty from '../empty';
+import empty from '../empty.js';
 
 // eslint-disable-next-line no-undef
 test('test', () => {
