@@ -6,7 +6,8 @@ export default class View {
     [this.container] = document.getElementsByClassName('container');
     [this.resultArea] = document.getElementsByClassName('result');
     [this.img] = document.images;
-    this.interval = this.setActive.bind(this);
+    this.setActive = this.setActive.bind(this);
+    this.index = null;
   }
 
   init() {
@@ -26,7 +27,8 @@ export default class View {
     if (document.images[0]) { this.deleteImg(); }
 
     const cells = this.container.children;
-    const i = random();
+    const i = random(this.index);
+    this.index = i;
     cells[i].appendChild(this.img);
   }
 
