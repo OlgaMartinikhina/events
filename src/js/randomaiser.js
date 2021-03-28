@@ -1,8 +1,9 @@
 export default function random(index) {
-  let newIndex = Math.floor(Math.random() * (16 - 0)) + 0;
+  let newIndex;
 
-  // eslint-disable-next-line no-plusplus
-  if (index === newIndex) newIndex++;
+  do {
+    newIndex = Math.floor(Math.random() * (16 - 0)) + 0;
+  } while (index === newIndex);
 
   return newIndex;
 }
