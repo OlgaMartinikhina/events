@@ -1,0 +1,1 @@
+import View from"./view.js";import Logic from"./logic.js";var view=new View;view.init();var logic=new Logic(view);logic.init();

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+  
+  .container div {
+    height: 120px;
+    width: calc(25% - 10px);
+    border: 2px solid #002f6c;
+  }
+
+
+ 
+  .result {
+    padding: 0px 0px;
+    color: #002f6c;
+    margin-bottom: 50px;
+  }
